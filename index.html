@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span class="white">DIGI</span><span class="neon">CONNECT</span></h1>
+        </div>
+        <nav id="hamburger-menu">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">PRODUCT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="cart.html">CART</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="visible">
+        <div class="home-content">
+            <div class="text-content">
+                <h2>Welcome to <span class="white">DIGI</span><span class="neon">CONNECT</span></h2>
+                <p>Upgrade your workspace with quality peripherals- where business meets technology.</p>
+                <a href="#about" class="get-started-btn">Get Started</a>
+            </div>
+            <div class="image-content">
+                <img src="logo.jpg" alt="Business Profile" class="profile-image">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Our Business</h2>
+            <p>
+                At DIGICONNECT, we specialize in providing high-quality computer peripherals 
+                to meet all your tech needs, combining exceptional products with reliable 
+                customer service to enhance your digital experience. We provide everything you 
+                need to enhance your computing experience, from keyboards and mouse 
+                to monitors, printers, and more!
+            </p>
+        </div>
+        <div class="about-images">
+            <img src="image1.jpg" alt="Image 1" class="image-box box1">
+            <img src="image2.jpg" alt="Image 2" class="image-box box2">
+            <img src="image3.jpg" alt="Image 3" class="image-box box3">
+        </div>
+    </div>
+</section>
+
+    <section id="services">
+        <div class="content">
+            <h2>PRODUCTS</h2>
+            <p>We offer a wide range of products tailored to your wants and needs.</p>
+            <div class="product-grid">
+                <!-- Product 1 -->
+            <div class="product-card" data-id="1" data-name="Cooling Pad" data-price="2499" data-image="1.jpg">
+                <img src="1.jpg" alt="Product 1" class="product-image">
+                <div class="product-details">
+                    <h3>Cooling Pad</h3>
+                    <p class="price">2499</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-id="2" data-name="Mechanical Keyboard" data-price="650" data-image="2.jpg">
+                <img src="2.jpg" alt="Product 2" class="product-image">
+                <div class="product-details">
+                    <h3>Mechanical Keyboard</h3>
+                    <p class="price">650</p>
+                    <div class="color-selector">
+                        <label for="color2">Select Color:</label>
+                        <select id="color2" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-id="3" data-name="HDD" data-price="499" data-image="3.jpg">
+                <img src="3.jpg" alt="Product 3" class="product-image">
+                <div class="product-details">
+                    <h3>HDD</h3>
+                    <p class="price">2499</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card" data-id="4" data-name="Monitor" data-price="7899" data-image="4.jpg">
+                <img src="4.jpg" alt="Product 4" class="product-image">
+                <div class="product-details">
+                    <h3>Monitor</h3>
+                    <p class="price">7899</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" data-id="5" data-name="Printer" data-price="4999" data-image="5.jpg">
+                <img src="5.jpg" alt="Product 5" class="product-image">
+                <div class="product-details">
+                    <h3>Printer</h3>
+                    <p class="price">4999</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" data-id="6" data-name="Microphone" data-price="499" data-image="6.jpg">
+                <img src="6.jpg" alt="Product 6" class="product-image">
+                <div class="product-details">
+                    <h3>Microphone</h3>
+                    <p class="price">499</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card" data-id="7" data-name="Gaming Speaker" data-price="399" data-image="7.jpg">
+                <img src="7.jpg" alt="Product 7" class="product-image">
+                <div class="product-details">
+                    <h3>Gaming Speaker</h3>
+                    <p class="price">399</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE/option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card" data-id="8" data-name="Gaming mouse" data-price="299" data-image="8.jpg">
+                <img src="8.jpg" alt="Product 8" class="product-image">
+                <div class="product-details">
+                    <h3>Gaming mouse</h3>
+                    <p class="price">299</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card" data-id="9" data-name="Gaming headset" data-price="899" data-image="9.jpg">
+                <img src="9.jpg" alt="Product 9" class="product-image">
+                <div class="product-details">
+                    <h3>Gaming headset</h3>
+                    <p class="price">899</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card" data-id="10" data-name="Wired Gamingpad" data-price="399" data-image="10.jpg">
+                <img src="10.jpg" alt="Product 10" class="product-image">
+                <div class="product-details">
+                    <h3>Wired Gamingpad</h3>
+                    <p class="price">399</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card" data-id="11" data-name="SD Card" data-price="300" data-image="11.jpg">
+                <img src="11.jpg" alt="Product 11" class="product-image">
+                <div class="product-details">
+                    <h3>SD Card</h3>
+                    <p class="price">300</p>
+                    <div class="color-selector">
+                        <label for="color1">Memory Storage:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">512</option>                          
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card" data-id="12" data-name="Docking station" data-price="3399" data-image="12.jpg">
+                <img src="12.jpg" alt="Product 12" class="product-image">
+                <div class="product-details">
+                    <h3>Docking station</h3>
+                    <p class="price">3399</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card" data-id="13" data-name="Wifi Dongle" data-price="599" data-image="13.jpg">
+                <img src="13.jpg" alt="Product 13" class="product-image">
+                <div class="product-details">
+                    <h3>Wifi Dongle</h3>
+                    <p class="price">299</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card" data-id="14" data-name="HD Webcam" data-price="899" data-image="14.jpg">
+                <img src="14.jpg" alt="Product 14" class="product-image">
+                <div class="product-details">
+                    <h3>HD Webcam</h3>
+                    <p class="price">899</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-card" data-id="15" data-name="Gaming mouse" data-price="299" data-image="15.jpg">
+                <img src="15.jpg" alt="Product 15" class="product-image">
+                <div class="product-details">
+                    <h3>E-Power Supply</h3>
+                    <p class="price">299</p>
+                    <div class="color-selector">
+                        <label for="color1">Select Color:</label>
+                        <select id="color1" class="color-dropdown">
+                            <option value="NOT">BLACK</option>
+                            <option value="RGB">WHITE</option>
+                        </select>
+                    </div>
+                    <button class="order-btn add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Follow us on social medias!</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/itsme.jnz/profilecard/" class="icon instagram" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61569685628505&mibextid=ZbWKwL" class="icon facebook" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@yo.jnzsht?_t=8s4NDdJ750S&_r=1" class="icon tiktok" target="_blank">TikTok</a>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 DIGICONNECT</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
